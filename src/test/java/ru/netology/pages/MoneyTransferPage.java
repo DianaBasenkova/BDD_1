@@ -16,6 +16,7 @@ public class MoneyTransferPage {
     }
 
     public void transfer() {
+
     }
 
     public DashboardPage transfer(int amount, String cardNumber) {

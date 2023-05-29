@@ -14,6 +14,16 @@ public class DashboardPage {
     public void Dashboard() {
     }
 
+    public int getFirstCardBalance() {
+        val text = cards.first().text();
+        return extractBalance(text);
+    }
+
+    public int getSecondCardBalance() {
+        val text = cards.get(1).text();
+        return extractBalance(text);
+    }
+
     private int extractBalance(String text) {
         val start = text.indexOf(balanceStart);
         val finish = text.indexOf(balanceFinish);
@@ -21,7 +31,9 @@ public class DashboardPage {
         return Integer.parseInt(value);
     }
 
-    public int getCardBalance(String id) {
-        return extractBalance(text);
+    // переход к странице перевода ???
+    public MoneyTransferPage click() {
+        debitButtons().click;
+        return new MoneyTransferPage();
     }
 }
