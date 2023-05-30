@@ -21,22 +21,19 @@ public class IBTest {
         var authInfo = getAuthInfo();
         var verificationPage = loginPage.validLogin(authInfo);
         var verificationCode = getVerificationCode();
-        verificationPage.validVerify(verificationCode);
        dashboardPage = verificationPage.validVerify(verificationCode);
     }
-
     @AfterEach
     void cleanUp() {
         Selenide.clearBrowserCookies();
         Selenide.clearBrowserLocalStorage();
     }
-
     @Test
     void shouldTransferFromFirstCardToSecondCard() {
         var firstCardInfo = getFirstCardInfo();
         var secondCardInfo = getSecondCardInfo();
-        var firstCardBalance = dashboardPage.getCardBalance(firstCardInfo);
-        var secondCardBalance = dashboardPage.getCardBalance(secondCardInfo);
+        var firstCardBalance = dashboardPage.getFirstCardBalance(0);
+        var secondCardBalance = dashboardPage.getSecondCardBalance(1);
         var amount = generateValidAmount(firstCardBalance);
         var firstCardBalanceAfterTransfer = firstCardBalance - amount;
         var secondCardBalanceAfterTransfer = secondCardBalance + amount;
