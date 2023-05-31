@@ -6,11 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="16bec389-7ef1-4856-b2d1-ef7b96505d13" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/data/DataHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/data/DataHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/pages/MoneyTransferPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/pages/MoneyTransferPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/test/IBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/test/IBTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -36,15 +43,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;D:/Programming/Behaviour_Driven_Development_1/BDD1/src/test/java/ru/netology&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Programming/Behaviour_Driven_Development_1/BDD1/build.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_directory_selection": "D:/Programming/Behaviour_Driven_Development_1/BDD1/src/test/java/ru/netology",
+    "last_opened_file_path": "D:/Programming/Behaviour_Driven_Development_1/BDD1/build.gradle",
+    "settings.editor.selected.configurable": "build.tools"
   }
-}</component>
-  <component name="RunManager" selected="Gradle.IBTest.shouldTransferFromFirstCardToSecondCard">
+}]]></component>
+  <component name="RunManager" selected="Gradle.IBTest.transferIfAmountOverLimit">
     <configuration name="IBTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -59,29 +67,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ru.netology.test.IBTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="IBTest.shouldSuccessfulLTransferFromFirstToSecondCard" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.netology.test.IBTest.shouldSuccessfulLTransferFromFirstToSecondCard&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -114,29 +99,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="IBTest.shouldSuccessfulLTransferFromSecondToFirstCard" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;IBTest.shouldSuccessfulLTransferFromSecondToFirstCard&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="IBTest.shouldTransferFromFirstCardToSecondCard" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -160,13 +122,59 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="IBTest.shouldTransferFromSecondCardToFirst" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.netology.test.IBTest.shouldTransferFromSecondCardToFirst&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="IBTest.transferIfAmountOverLimit" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.netology.test.IBTest.transferIfAmountOverLimit&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.IBTest.transferIfAmountOverLimit" />
+        <item itemvalue="Gradle.IBTest.shouldTransferFromSecondCardToFirst" />
         <item itemvalue="Gradle.IBTest.shouldTransferFromFirstCardToSecondCard" />
         <item itemvalue="Gradle.IBTest" />
         <item itemvalue="Gradle.IBTest.shouldSuccessfulLTransferFromSecondToFirstCard (1)" />
-        <item itemvalue="Gradle.IBTest.shouldSuccessfulLTransferFromFirstToSecondCard" />
-        <item itemvalue="Gradle.IBTest.shouldSuccessfulLTransferFromSecondToFirstCard" />
       </list>
     </recent_temporary>
   </component>

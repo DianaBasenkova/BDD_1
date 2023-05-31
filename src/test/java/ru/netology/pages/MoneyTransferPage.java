@@ -29,9 +29,10 @@ public class MoneyTransferPage {
         cardNumberFrom.setValue(cardInfo.getCardNumber());
     }
 
-    public void transfer(String amount, DataHelper.CardInfo cardInfo) {
+    public DashboardPage transfer(String amount, DataHelper.CardInfo cardInfo) {
         fillFields(amount, cardInfo);
         debitButton.click();
+        return null;
     }
 
     public DashboardPage successfulTransfer(String amount, DataHelper.CardInfo cardInfo) {
